@@ -1,0 +1,141 @@
+.saree-dashboard {
+  position: relative !important;
+  min-height: 100vh !important;
+  padding: 80px 20px !important;
+  z-index: 1 !important;
+}
+
+.bg-image img {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+  z-index: -3 !important;
+  pointer-events: none !important;
+}
+
+.bg-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)) !important;
+  z-index: -2 !important;
+  pointer-events: none !important;
+}
+
+.saree-dashboard-title {
+  text-align: center !important;
+  font-size: 2.8rem !important;
+  color: #fff !important;
+  margin-bottom: 60px !important;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.6) !important;
+  z-index: 2 !important;
+  position: relative !important;
+}
+
+.saree-cards-container {
+  display: flex !important;
+  flex-direction: column !important; 
+  gap: 50px !important;
+  width: 95% !important;
+  max-width: 95% !important;
+  margin: 0 auto !important;
+  z-index: 2 !important;
+  position: relative !important;
+}
+
+.saree-card.wide-card {
+  display: grid !important;
+  grid-template-columns: 80px 1.6fr 250px !important; 
+  gap: 30px !important;
+  padding: 35px !important;
+
+  background: rgba(255, 255, 255, 0.92) !important;
+  backdrop-filter: blur(6px) !important;
+
+  border-radius: 22px !important;
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255,255,255,0.4) !important;
+
+  align-items: center !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 auto !important;
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+}
+
+.saree-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.4) !important;
+}
+
+.saree-card-left {
+  font-size: 2.2rem !important;
+  font-weight: 800 !important;
+  color: #8b1d3d !important;
+  text-align: center !important;
+}
+
+.saree-card-middle h2 {
+  font-size: 1.8rem !important;
+  margin-bottom: 12px !important;
+  color: #5c1a1a !important;
+}
+
+.saree-card-middle p {
+  font-size: 1.05rem !important;
+  line-height: 1.6 !important;
+  color: #333 !important;
+}
+
+.saree-card-right {
+  width: 250px !important; 
+  height: 250px !important; 
+}
+
+.saree-swiper {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 15px !important;
+  overflow: hidden !important;
+}
+
+.saree-swiper img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.5s ease !important;
+}
+
+.swiper-pagination-bullet {
+  display: none !important; 
+}
+
+@media (max-width: 1024px) {
+  .saree-card.wide-card {
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  .saree-card-right {
+    width: 100% !important;
+    height: 250px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .saree-dashboard-title {
+    font-size: 2rem !important;
+  }
+
+  .saree-card-middle h2 {
+    font-size: 1.4rem !important;
+  }
+
+  .saree-card-middle p {
+    font-size: 0.95rem !important;
+  }
+}

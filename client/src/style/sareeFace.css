@@ -1,0 +1,87 @@
+.saree-card {
+  background: #f7f5f2 !important; 
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 350px; 
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.saree-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.saree-card-subtitle {
+  font-weight: 600;
+  color: #d81b60;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.saree-card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #800020;
+  margin-bottom: 5px;
+}
+
+.saree-card-text {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.saree-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.saree-card img:hover {
+  transform: scale(1.03);
+}
+
+.saree-card-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.saree-card-buttons button {
+  background: #d81b60;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-weight: 600;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.saree-card-buttons button:hover {
+  background: #ff4081;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .saree-card {
+    width: 90%;
+    padding: 12px;
+  }
+
+  .saree-card img {
+    height: 180px;
+  }
+}

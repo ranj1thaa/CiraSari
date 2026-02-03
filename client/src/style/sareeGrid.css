@@ -1,0 +1,114 @@
+.saree-grid-page {
+  width: 100%;
+  padding: 40px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.saree-grid-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.saree-grid-buttons button {
+  background: #ffd9b3;
+  color: #800020;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.saree-grid-buttons button:hover {
+  background: #ffe6f0;
+  transform: translateY(-2px);
+}
+
+
+.saree-cards-container {
+  display: flex;            
+  flex-wrap: wrap;         
+  justify-content: center;  
+  gap: 20px;               
+  width: 95%;
+  margin: 0 auto;
+}
+.saree-card {
+  background: #fdf6f0; 
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.saree-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.saree-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.saree-card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.saree-card-body h3 {
+  font-size: 1.2rem;
+  color: #800020;
+  margin: 0;
+}
+
+.saree-card-body p {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0;
+}
+
+.saree-card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.saree-card-actions button {
+  background: #d81b60;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.saree-card-actions button:hover {
+  background: #ff4081;
+  transform: translateY(-2px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .saree-grid-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .saree-card img {
+    height: 200px;
+  }
+}

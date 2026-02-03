@@ -1,0 +1,132 @@
+.customer-orders-page {
+  min-height: 100vh;
+  background: #161616;
+  padding: 40px 20px;
+  color: #f2f2f2;
+}
+
+.customer-orders-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffd700;
+  margin-bottom: 30px;
+}
+
+.customer-order-card {
+  background: #f9f9f9;
+  color: #222;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: transform 0.25s ease;
+}
+
+.customer-order-card:hover {
+  transform: translateY(-4px);
+}
+
+.order-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.order-badges {
+  display: flex;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.badge-type {
+  background: #0dcaf0;
+  color: #000;
+}
+
+.badge-status.pending {
+  background: #ffc107;
+  color: #000;
+}
+
+.badge-status.accepted {
+  background: #4caf50;
+}
+
+.badge-status.rejected {
+  background: #e53935;
+}
+
+.badge-status.completed {
+  background: #673ab7;
+}
+
+.order-weaver span {
+  font-weight: 600;
+}
+
+.chat-btn {
+  margin-top: 10px;
+  border-radius: 999px;
+  padding: 5px 16px;
+  background: #000;
+  color: #fff;
+  border: none;
+}
+
+.chat-btn:hover {
+  background: #222;
+}
+
+
+.chat-body {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  max-width: 80%;
+}
+
+.chat-message.me {
+  background: #e3f2fd;
+  margin-left: auto;
+  text-align: right;
+}
+
+.chat-message.them {
+  background: #f1f1f1;
+  margin-right: auto;
+}
+
+.chat-message p {
+  margin: 4px 0 0;
+}
+
+.no-chat {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}
+
+.chat-input {
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.send-btn {
+  border-radius: 999px;
+  padding: 6px 20px;
+  background: #000;
+  border: none;
+}
+
+.send-btn:hover {
+  background: #222;
+}
+
+@media (max-width: 768px) {
+  .chat-message {
+    max-width: 100%;
+  }
+}

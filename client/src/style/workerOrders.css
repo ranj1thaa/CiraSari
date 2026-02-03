@@ -1,0 +1,123 @@
+.worker-orders-page {
+  min-height: 100vh;
+  background: #fefcfc;
+  padding: 40px 20px;
+  color: #f2f2f2;
+}
+
+.worker-orders-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #24c6df;
+  margin-bottom: 30px;
+}
+
+
+.worker-order-card {
+  background: #161616;
+  color: #f8f6f6;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: transform 0.25s ease;
+}
+
+.worker-order-card:hover {
+  transform: translateY(-4px);
+}
+
+.order-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f8f4f4;
+}
+
+.order-badges {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.badge-type {
+  background: #0dcaf0;
+  color: #faf3f3;
+}
+
+.badge-status {
+  text-transform: capitalize;
+}
+
+.badge-status.pending {
+  background: #ffc107;
+  color: #f8f2f2;
+}
+
+.badge-status.accepted {
+  background: #4caf50;
+}
+
+.badge-status.rejected {
+  background: #e53935;
+}
+
+.badge-status.completed {
+  background: #673ab7;
+}
+
+.order-customer {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.order-customer span {
+  font-weight: 600;
+  color: #000;
+}
+
+.order-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.order-actions .btn {
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 6px 18px;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.order-actions .btn:hover {
+  transform: scale(1.05);
+}
+
+.btn.accept {
+  background: #4caf50;
+  color: #fff;
+}
+
+.btn.reject {
+  background: #e53935;
+  color: #fff;
+}
+
+.btn.complete {
+  background: #3f51b5;
+  color: #fff;
+}
+
+.btn.reply {
+  background: #000;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .order-actions {
+    flex-direction: column;
+  }
+
+  .order-actions .btn {
+    width: 100%;
+  }
+}

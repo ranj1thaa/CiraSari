@@ -1,0 +1,89 @@
+/* ===== Post Card ===== */
+.infotainment-card {
+  width: 100%;
+  max-width: 800px; /* increased width from 600px to 800px */
+  background: #fdf6f0; /* light card */
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  margin: 20px auto; /* center horizontally */
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.infotainment-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== Post Header ===== */
+.infotainment-card-subtitle {
+  font-weight: 600;
+  color: #d81b60; /* Instagram-like accent */
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* ===== Post Content ===== */
+.infotainment-card-text {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* ===== Post Images & Videos ===== */
+.infotainment-media {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.infotainment-media img,
+.infotainment-media video {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Like Button ===== */
+.infotainment-like-btn {
+  margin-top: 5px;
+  font-weight: 600;
+  border-radius: 9999px;
+  transition: all 0.2s;
+}
+
+.infotainment-like-btn:hover {
+  transform: scale(1.05);
+}
+
+
+/* ===== Loading Spinner ===== */
+.infotainment-loading {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+  .infotainment-card {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .infotainment-card-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .infotainment-card {
+    width: 95%;
+    padding: 12px;
+  }
+}
