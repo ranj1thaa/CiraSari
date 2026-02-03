@@ -13,7 +13,7 @@ const stripeRoute=require('./routes/stripe')
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-  origin:process.env.BASE_URI,
+  origin:["https://your-vercel-frontend-url.vercel.app"],
   credentials:true
 }))
 
