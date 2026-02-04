@@ -27,8 +27,8 @@ exports.login=WrapAsync(async(req, res)=>{
   }
   res.cookie("accessToken", token,{
     httpOnly: true,
-    secure: true,
-    sameSite: "lax",
+    secure: true,      
+    sameSite: "none",
     maxAge: 15 * 60 * 1000,
   })
 
@@ -73,8 +73,8 @@ exports.signup=WrapAsync(async(req, res)=>{
   }
   res.cookie("accessToken", token,{
     httpOnly: true,
-    secure: true,
-    sameSite: "lax",
+    secure: true,      
+    sameSite: "none",
     maxAge: 15 * 60 * 1000,
   })
 
@@ -96,9 +96,9 @@ exports.me=WrapAsync(async(req, res)=>{
 
 exports.logout=WrapAsync(async(req, res)=>{
   res.clearCookie("accessToken", {
-    httpOnly: true,
+    httpOnly: none,
     sameSite: "lax",
-    secure: false,
+    secure: true,
   })
    res.status(200).json({ message: "Logged out" });
 })
