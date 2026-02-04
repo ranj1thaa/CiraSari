@@ -23,7 +23,7 @@ import Cart from './pages/marketplace/Cart';
 import WorkerOrders from './pages/marketplace/WorkerOrders';
 import CustomerOrders from './pages/marketplace/CustomerOrders';
 import StripeCheckoutWrapper from './components/payment/StripeCheckoutWrapper';
-import WorkerMySareeCollection from './components/saree/workerMySareeCollection';
+import WorkerMySareeCollection from './components/saree/WorkerMySareeCollection';
 
 
 
