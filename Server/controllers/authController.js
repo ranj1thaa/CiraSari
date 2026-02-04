@@ -27,7 +27,7 @@ exports.login=WrapAsync(async(req, res)=>{
   }
   res.cookie("accessToken", token,{
     httpOnly: true,
-    secure: false,
+    secure: true,
     sameSite: "lax",
     maxAge: 15 * 60 * 1000,
   })
@@ -73,7 +73,7 @@ exports.signup=WrapAsync(async(req, res)=>{
   }
   res.cookie("accessToken", token,{
     httpOnly: true,
-    secure: false,
+    secure: true,
     sameSite: "lax",
     maxAge: 15 * 60 * 1000,
   })
