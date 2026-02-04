@@ -13,8 +13,10 @@ const stripeRoute=require('./routes/stripe')
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-  origin:["https://your-vercel-frontend-url.vercel.app"],
-  credentials:true
+  origin: "http://localhost:5173",
+  credentials:true,       
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"]
 }))
 
 app.use('/auth', authRoute)

@@ -4,6 +4,6 @@ const app=require('./index')
 
 Connect().then(()=>{
   app.listen(process.env.PORT,()=>{
-    console.log("Port Started")
+    console.log(`port started on ${process.env.PORT}`)
   })
 })

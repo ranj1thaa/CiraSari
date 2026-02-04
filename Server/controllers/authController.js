@@ -22,7 +22,9 @@ exports.login=WrapAsync(async(req, res)=>{
   }
 
   const token=tokens(existingUser)
-
+  if (!token) {
+    return res.status(401).json({ message: "Unauthorized" });
+  }
   res.cookie("accessToken", token,{
     httpOnly: true,
     secure: false,
@@ -66,7 +68,9 @@ exports.signup=WrapAsync(async(req, res)=>{
   await user.save()
 
   const token=tokens(user)
-
+  if (!token) {
+      return res.status(401).json({ message: "Unauthorized" });
+  }
   res.cookie("accessToken", token,{
     httpOnly: true,
     secure: false,
