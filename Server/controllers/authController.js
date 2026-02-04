@@ -96,8 +96,8 @@ exports.me=WrapAsync(async(req, res)=>{
 
 exports.logout=WrapAsync(async(req, res)=>{
   res.clearCookie("accessToken", {
-    httpOnly: none,
-    sameSite: "lax",
+    httpOnly: true,
+    sameSite: "none",
     secure: true,
   })
    res.status(200).json({ message: "Logged out" });
