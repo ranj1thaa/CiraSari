@@ -1,154 +1,200 @@
-CiraSari – Connecting Traditional Saree Weavers with Customers
-CiraSari is a full-stack MERN web application designed to empower traditional saree weavers by providing a digital platform where they can showcase, sell, and manage saree orders directly with customers.
-The platform bridges the gap between artisans and buyers by enabling secure payments, direct communication, order management, and feedback handling.
+<div align="center">
 
-Key Features
-Weaver (Seller) Features
-  Create and manage saree listings with images stored on Cloudinary
-  Receive and manage customer orders
-  Communicate directly with customers through order-based messaging
-  Track order status (Pending, Accepted, Completed)
-  Secure authentication and role-based access
+<h1>🛍️ CiraSari</h1>
 
-Customer Features
-  Browse sarees from multiple weavers
-  Add sarees to cart and place orders
-  Secure online payments using Stripe
-  Communicate with weavers regarding orders
-  Submit feedback or complaints via contact form
-  Google OAuth login support
+<p>
+Connecting Traditional Saree Weavers with Customers
+</p>
 
-Feedback & Support System
-  Customer feedback and complaint form
-  Automated email notifications sent to admin using Nodemailer
-  Categorized complaints (Order Issue, Payment Issue, Product Quality, etc.)
+<p>
+CiraSari is a full-stack MERN marketplace platform empowering traditional saree weavers to sell directly to customers.
+</p>
 
-Tech Stack
-Frontend
-React.js (Vite)
-React Router DOM
-Axios
-Tailwind CSS
-Bootstrap & React-Bootstrap
-GSAP (Animations)
-Swiper.js (Carousels)
-React Toastify (Notifications)
-Stripe React SDK
-Backend
-Node.js
-Express.js
-MongoDB & Mongoose
-JWT Authentication
-Bcrypt (Password hashing)
-Stripe API (Payments)
-Cloudinary (Image uploads)
-Multer (File handling)
-Nodemailer (Email service)
-Cookie-Parser & CORS
+</div>
 
-Core Implementations
-🔐Authentication & Authorization
+---
 
-JWT-based authentication
+## 🌟 Project Overview
 
-Secure password hashing using bcrypt
+<p>
+CiraSari bridges the gap between artisans and buyers by providing:
+</p>
 
-Role-based access control (Customer / Weaver)
+<ul>
+<li>🧵 Saree listing marketplace</li>
+<li>💳 Secure payment integration</li>
+<li>📦 Order management system</li>
+<li>💬 Customer-weaver communication</li>
+<li>⭐ Feedback and complaint handling</li>
+</ul>
 
-Google OAuth login integration
+---
 
-🛒 Order & Cart System
+## 👨‍🌾 Weaver (Seller) Features
 
-Customers can add sarees to cart or directly place orders
+<ul>
+<li>Create and manage saree listings</li>
+<li>Upload images using Cloudinary</li>
+<li>Track customer orders</li>
+<li>Order status management (Pending / Accepted / Completed)</li>
+<li>Secure authentication</li>
+<li>Role-based authorization</li>
+</ul>
 
-Orders are stored with status tracking
+---
 
-Order-level messaging between customer and weaver
+## 🛒 Customer Features
 
-Workers can accept, reject, or complete orders
+<ul>
+<li>Browse sarees from multiple weavers</li>
+<li>Add products to cart</li>
+<li>Secure Stripe payment checkout</li>
+<li>Order communication system</li>
+<li>Feedback & complaint submission</li>
+<li>Google OAuth login support</li>
+</ul>
 
-💳 Stripe Payment Integration
+---
 
-Stripe Payment Intent for secure transactions
+## 💬 Feedback & Support System
 
-Frontend handles payment confirmation
+<ul>
+<li>Customer feedback and complaint form</li>
+<li>Automated email notifications using Nodemailer</li>
+<li>Categorized complaint tracking</li>
+</ul>
 
-Backend verifies and updates payment status
+---
 
-Secure and scalable checkout flow
+## 🛠 Tech Stack
 
-🖼 Image Uploads
+<h3>Frontend</h3>
 
-Saree images uploaded using Multer
+<p>
+React (Vite) | React Router | Axios | Tailwind CSS | Bootstrap |
+GSAP Animations | Swiper.js | React Toastify | Stripe React SDK
+</p>
 
-Stored securely on Cloudinary
+<h3>Backend</h3>
 
-Optimized for performance and scalability
+<p>
+Node.js | Express.js | MongoDB | Mongoose | JWT | Bcrypt |
+Stripe API | Cloudinary | Multer | Nodemailer | CORS | Cookie Parser
+</p>
 
-📩 Feedback & Email System
+---
 
-Contact/complaint form connected to backend
+## 🔐 Authentication & Security
 
-Nodemailer sends structured emails to admin
+<ul>
+<li>JWT authentication</li>
+<li>Password hashing with bcrypt</li>
+<li>Role-based access control</li>
+<li>Google OAuth login</li>
+</ul>
 
-Error handling and validation included
+---
 
-🌟 Standout Highlights
+## 💳 Payment System
 
-Complete end-to-end MERN stack application
+<ul>
+<li>Stripe Payment Intent integration</li>
+<li>Secure checkout flow</li>
+<li>Payment verification on backend</li>
+</ul>
 
-Real-world e-commerce & artisan marketplace use case
+---
 
-Secure payment flow with Stripe
+## 🖼 Image Upload System
 
-Clean separation of frontend and backend
+<ul>
+<li>Multer for file handling</li>
+<li>Cloudinary storage</li>
+<li>Optimized image delivery</li>
+</ul>
 
-Production-ready architecture and environment configuration
+---
 
-User-friendly UI with animations and responsive design
+## 📩 Email & Support System
 
-🔮 Future Enhancements
+<ul>
+<li>Contact & complaint forms</li>
+<li>Admin email notifications</li>
+<li>Validation & error handling</li>
+</ul>
 
-Real-time chat using Socket.IO
+---
 
-Admin dashboard for platform monitoring
+## 🌟 Standout Features
 
-Order analytics for weavers
+<ul>
+<li>Full-stack MERN marketplace architecture</li>
+<li>Real-world artisan business use case</li>
+<li>Production-ready security practices</li>
+<li>Modern UI with animations</li>
+</ul>
 
-Push notifications
+---
 
-Invoice download feature
+## 🔮 Future Improvements
 
-Review & rating system
+<ul>
+<li>Real-time chat using Socket.IO</li>
+<li>Admin analytics dashboard</li>
+<li>Order analytics for weavers</li>
+<li>Push notifications</li>
+<li>Review & rating system</li>
+<li>Invoice download system</li>
+</ul>
 
-⚙️ Installation & Setup
-Backend Setup
+---
+
+## ⚙️ Setup Instructions
+
+<h3>Backend Setup</h3>
+
+<pre>
 cd server
 npm install
 npm run dev
-
+</pre>
 
 Create .env file:
+
+<pre>
 PORT=5000
 MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_secret
 STRIPE_SECRET_KEY=your_stripe_key
 ADMIN_EMAIL=your_email
 EMAIL_PASS=your_email_password
+</pre>
 
-Frontend Setup
+---
+
+<h3>Frontend Setup</h3>
+
+<pre>
 cd client
 npm install
 npm run dev
+</pre>
 
-📚 Learning Outcomes
+---
 
-Built a scalable MERN stack application
+## 📚 Learning Outcomes
 
-Integrated Stripe payments securely
+<ul>
+<li>Built scalable MERN applications</li>
+<li>Implemented secure payment flows</li>
+<li>Integrated third-party services</li>
+<li>Designed marketplace architecture</li>
+</ul>
 
-Implemented authentication & authorization
+---
 
-Hands-on experience with Cloudinary & Nodemailer
+## 👩‍💻 Author
 
-Designed a real-world artisan marketplace solution
+<p>
+Developed as a full-stack development project focused on real-world marketplace problems.
+</p>
